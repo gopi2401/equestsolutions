@@ -1,0 +1,81 @@
+---
+// import ModalVideo from "react-modal-video";
+// import { Link } from "react-router-dom";
+// import { Image } from "react-bootstrap";
+
+// import "./HireYourTeam.scss";
+
+import hireTeam1 from "../../../images/poster-img.png";
+import hireTeamWebp1 from "../../../images/poster-img.webp";
+import hireTeam2 from "../../../images/team-work-1-1.jpg";
+import hireTeamWebp2 from "../../../images/team-work-1-1.webp";
+
+// const [isOpen, setOpen] = useState(false);
+const { title, description, linkName } = Astro.props;
+---
+
+<section
+  class="hire_your_team_sec sec_pt sec_pb"
+  style={{ background: "#f9f9f9" }}
+>
+  <div class="container">
+    <div class="row align-items-center mb-4 mb-lg-5">
+      <div class="col-md-8 col-12">
+        <div class="heading_wrapper">
+          <h2 class="sec_heading sec_heading-medium with_border">
+            {title}
+          </h2>
+        </div>
+        <div class="desc mb-3 mb-md-0">
+          <p>{description}</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-12">
+        <div class="hire_your_team-btn">
+          <!-- <Link to="/contact" class="btn btn_secondary">
+            {linkName}
+          </Link> -->
+          <a href="/contact" class="btn btn_secondary">
+            {linkName}
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row custom_row_margin-lg">
+      <div class="col-md-8 col-12 custom_col_padding-lg">
+        <div class="hire_your_team_video">
+          <!-- <ModalVideo
+            channel="youtube"
+            autoplay
+            isOpen={isOpen}
+            videoId="rMWIhiYFsZU"
+            onClose={() => setOpen(false)}
+          /> -->
+          <!-- <div
+            class="hire_your_team_video_wrapper"
+            onClick={() => setOpen(true)}
+          >
+            <div class="hire_your_team_video-img bg-overlay">
+              <picture class="bg-overlay__media">
+                <source srcSet={hireTeamWebp1} type="image/webp" />
+                <source srcSet={hireTeam1} type="image/png" />
+                <Image src={hireTeam1} alt="footer" fluid />
+              </picture>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="col-md-4 col-12 custom_col_padding-lg">
+        <div class="hire_your_team_img_block mt-4 mt-md-0">
+          <div class="hire_your_team_img">
+            <!-- <picture class="bg-overlay__media">
+              <source srcSet={hireTeamWebp2} type="image/webp" />
+              <source srcSet={hireTeam2} type="image/jpeg" />
+              <Image src={hireTeam2} alt="footer" fluid />
+            </picture> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

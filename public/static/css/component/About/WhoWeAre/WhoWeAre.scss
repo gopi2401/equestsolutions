@@ -1,0 +1,56 @@
+@import "../../../variable";
+.who_we_are_video {
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-bottom: 0;
+  @media (max-width: 767px) {
+    margin: 0 -14px;
+    border-radius: 0;
+  }
+  .who_we_are_video-img {
+    padding-top: 56%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s linear;
+    transform: scale(1);
+    @media (max-width: 767px) {
+      border-radius: 0;
+    }
+    &:hover {
+      transition: 0.3s linear;
+      transform: scale(1.08);
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $dark_primary_color;
+      opacity: 0.3;
+    }
+  }
+
+  .who_we_are_video-play {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    img {
+      width: 80px;
+      display: inline-block;
+      vertical-align: middle;
+      @media (max-width: 767px) {
+        width: 50px;
+      }
+    }
+  }
+}

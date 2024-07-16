@@ -1,0 +1,111 @@
+---
+// import "./HomeMyBike.scss";
+import kotlin from "../../assets/media/kotlin.svg";
+import swift from "../../assets/media/swift.svg";
+import php from "../../assets/media/php.svg";
+import react from "../../assets/media/react.svg";
+import nodejs from "../../assets/media/nodejs.svg";
+import mongodb from "../../assets/media/mongodb.svg";
+// import { Link } from "react-router-dom";
+import mybykVideo from "../../assets/media/mybyk-new.mp4";
+import { Image } from "astro:assets";
+const technologyIconData = [
+  {
+    id: 1,
+    image: kotlin,
+  },
+  {
+    id: 2,
+    image: swift,
+  },
+  {
+    id: 3,
+    image: php,
+  },
+  {
+    id: 4,
+    image: react,
+  },
+  {
+    id: 5,
+    image: nodejs,
+  },
+  {
+    id: 6,
+    image: mongodb,
+  },
+];
+const { description } = Astro.props;
+---
+
+<section class="home_mybike_sec sec_pt sec_pb mybike_new" id="home_mybike">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-5 col-12">
+        <div class="mybike_sec_img mb-4 mb-md-0">
+          <video src={mybykVideo} loop muted autoPlay playsInline></video>
+        </div>
+      </div>
+      <div class="col-md-7 col-12">
+        <div class="mybike_content_wrapper">
+          <a
+            href="https://www.youtube.com/watch?v=vj6PhzeTvIQ"
+            rel="nofollow noreferrer"
+            target="_blank"
+            class="mybike_logo-list"
+          >
+            <div class="mybike_featured-logos">
+              <div class="mybike_featured">
+                <img
+                  src="/images/featured-shark-tank-1.svg"
+                  alt=""
+                  class="img-fluid mybyk-logo"
+                  width={240}
+                  height={152}
+                />
+              </div>
+              <div class="mybike_logo">
+                <img
+                  src="/images/logo-mybyk.png"
+                  alt=""
+                  class="img-fluid mybyk-logo"
+                  width={110}
+                  height={34}
+                />
+              </div>
+            </div>
+          </a>
+          <div class="heading_wrapper">
+            <h2 class="sec_heading sec_heading-medium">
+              India’s First Bike Sharing Program
+              <span class="app_color"> MYBYK</span> runs on our code
+            </h2>
+          </div>
+          <div class="desc mb-3">
+            <p>{description}</p>
+          </div>
+          <ul class="technology__icons">
+            {
+              technologyIconData.map((val, index) => {
+                return (
+                  <li key={index}>
+                    <div class="technology__icon">
+                      <Image
+                        src={val.image}
+                        alt=""
+                        class="img-fluid"
+                        loading="lazy"
+                        width={40}
+                        height={40}
+                      />
+                    </div>
+                  </li>
+                );
+              })
+            }
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

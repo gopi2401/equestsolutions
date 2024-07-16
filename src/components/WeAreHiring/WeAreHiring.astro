@@ -1,0 +1,35 @@
+---
+// import "./WeAreHiring.scss";
+const { title, description, link } = Astro.props;
+---
+
+<section class="we_are_hiring_sec">
+  <div class="container">
+    <div class="we_are_hiring_wrapper">
+      <div class="row align-items-center">
+        <div class="col-md-7 col-lg-6 col-12">
+          <div class="heading_wrapper mb-2">
+            <h2 class="sec_heading sec_heading-medium">
+              We are <span class="teal_text">hiring now</span>
+            </h2>
+          </div>
+          <div class="desc font18">
+            <p>{description}</p>
+          </div>
+        </div>
+        <div class="col-md-5 col-lg-6 col-12">
+          <div class="we_are_hiring-btn mt-3 mt-md-0 text-md-end">
+            <a
+              rel="noreferrer"
+              href={link}
+              target="_blank"
+              class="btn btn_secondary"
+            >
+              Apply Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

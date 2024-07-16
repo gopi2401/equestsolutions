@@ -1,0 +1,108 @@
+---
+// import React from "react";
+// import "./HomeLanding.scss";
+// import { Link } from "react-router-dom";
+// import { Link as Link1 } from "react-scroll";
+// // import { scroller } from "react-scroll";
+// // import Typical from "react-typical";
+// import TypewriterComponent from "typewriter-effect";
+import HeroImg from "../../utils/HeroImg.astro";
+// // import { BASE_URL } from "../../../config";
+import HeroMainImg from "../../assets/media/large-gradient-logo-icon.svg";
+import HeroTopImg from "../../assets/media/hero_laptop_man_woman.svg";
+import clutchBadge from "../../assets/media/clutch-100-list-badge.png";
+import { Image } from "astro:assets";
+const { linkName } = Astro.props;
+---
+
+<section class="home_landing_sec">
+  <div class="bg-bottom-left"></div>
+  <div class="bg-bottom-right"></div>
+  <div class="container position-relative">
+    <div class="row flip_mobile">
+      <div class="col-md-6 col-12 align-self-center">
+        <div class="home_landing_content">
+          <h1 class="big_heading mb-3">
+            your ideas. Our Innovation. <br /> Robust &nbsp;
+            <span class="primary_text"> </span>
+          </h1>
+          <div class="home_landing_desc mb-4">
+            <p>
+              We provide quick and efficient design and development solutions
+              for
+              <span> web</span>, <span>mobile</span>, <span>cloud</span> and
+              <span> IoT</span> with 100% delivery successes.
+            </p>
+          </div>
+          <a href="/about" class="btn btn_secondary">{linkName}</a>
+          <div class="home_landing_clutch">
+            <a
+              href="https://clutch.co/press-releases/Clutch-100-fastest-growing-companies-2024?_gl=1*6ek1qv*_gcl_au*MTM5Nzk3MDU4MS4xNzExNTI0ODA0*FPAU*MTkxMzc2ODA1LjE3MTE1MjQ4MDY."
+              target="_blank"
+              rel="noreferrer"
+            >
+              <h4>
+                We have been recognized as one of the 100 fastest-growing
+                companies on Clutch.
+              </h4>
+              <Image src={clutchBadge} class="img-fluid" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-12 align-self-end">
+        <div class="home_landing_img">
+          <div class="home_landing_bg">
+            <Image
+              src={HeroMainImg}
+              width={611}
+              height={610}
+              alt=""
+              class="img-fluid"
+            />
+            <Image
+              src={HeroTopImg}
+              width={563}
+              height={511}
+              alt=""
+              class="img-fluid home-landing-img"
+            />
+          </div>
+          <div class="home_landing_animated">
+            <HeroImg />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="home_scroll_down">
+      <a href="#home_mybike">
+        <span>Scroll for more</span>
+        <img
+          src="/images/arrow-down.svg"
+          alt=""
+          height={"26px"}
+          width={"26px"}
+          class="img-fluid ms-2"
+        />
+      </a>
+    </div>
+  </div>
+</section>
+
+<script
+  is:inline
+  src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+></script>
+
+<script>
+  const typed = new Typed(".primary_text", {
+    strings: ["Results.", "Solutions.", "Progress."],
+    autoStart: true,
+    loop: true,
+    pauseFor: 2000,
+    delay: 75,
+    typeSpeed: 40,
+    backSpeed: 30,
+  });
+</script>

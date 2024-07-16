@@ -1,0 +1,54 @@
+---
+// import "./ServicesList.scss";
+import { Image } from "astro:assets";
+import serviceItemCardData from "../../ComponentAPI/servicesItemAPI";
+---
+
+<section class="service-list">
+  {
+    serviceItemCardData.map((val, index) => {
+      return (
+        <div class="service-list-wrapper" key={index}>
+          <div class="container">
+            <div class="row service-row align-items-md-center">
+              <div class="col-lg-6 service-image-box">
+                <figure>
+                  <Image src={val.img} alt="" class="img-fluid" />
+                </figure>
+              </div>
+              <div class="col-lg-6 service-content-box">
+                <h4>{val.title}</h4>
+                {/* <p>{val.description}</p> */}
+                <div dangerouslySetInnerHTML={{ __html: val.description }} />
+                <ul class="technology__icons">
+                  {val.techImages.map((iconVal, iconIndex) => {
+                    return (
+                      <li key={iconIndex}>
+                        <div class="technology__icon">
+                          <Image
+                            src={iconVal.image}
+                            class="img-fluid"
+                            alt={iconVal.title}
+                            title={iconVal.title}
+                            loading="lazy"
+                          />
+                        </div>
+                      </li>
+                    );
+                  })}
+                </ul>
+                {/*
+                <div class="btn-wrapper">
+                  <Link to={val.linkUrl} class="btn btn_secondary">
+                    Find Out more
+                  </Link> 
+                </div>
+                */}
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    })
+  }
+</section>

@@ -1,0 +1,99 @@
+@import "../../../variable";
+@import "../../../mixin";
+
+.eq_mantra_sec {
+  .eq_mantra_content_wrapper {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba($dark_primary_color, 0.1);
+    @include media767 {
+      padding: 30px 0;
+    }
+    .eq_mantra-right {
+      margin-left: auto;
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1.4em;
+      font-family: $theme_font;
+      color: $dark_primary_color;
+      @media (max-width: 991px) {
+        font-size: 22px;
+      }
+      @media (max-width: 767px) {
+        font-size: 20px;
+        max-width: 40%;
+      }
+      @media (max-width: 575px) {
+        font-size: 18px;
+      }
+      @media (max-width: 360px) {
+        font-size: 15px;
+      }
+    }
+    .eq_mantra-left {
+      display: flex;
+      font-size: 24px;
+      font-weight: 600;
+      align-items: center;
+      color: $dark-color-secondary;
+      @media (max-width: 767px) {
+        font-size: 16px;
+      }
+      img {
+        width: 35px;
+        @media (max-width: 767px) {
+          width: 25px;
+        }
+        @media (max-width: 575px) {
+          width: 16px;
+        }
+      }
+    }
+  }
+  .slider-img {
+    filter: grayscale(100%);
+  }
+  .slider-img:hover {
+    filter: none;
+  }
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+
+    > div {
+      height: 100%;
+    }
+  }
+  @media only screen and (min-width: 1199px) {
+    .slick-slide:nth-child(8) {
+      margin-top: 30px;
+    }
+  }
+  @media only screen and (max-width: 1199px) and (min-width: 767px) {
+    .slick-slide:nth-child(8) {
+      margin-top: 30px;
+    }
+  }
+  @media only screen and (max-width: 767px) and (min-width: 576px) {
+    .slick-slide:nth-child(7) {
+      margin-top: 30px;
+    }
+  }
+  @media only screen and (min-width: 542px) and (max-width: 575px) {
+    .slick-slide:nth-child(6) {
+      margin-top: 30px;
+    }
+  }
+  @media only screen and (max-width: 414) and (max-width: 542px) {
+    .slick-slide:nth-child(7) {
+      margin-top: 30px;
+    }
+  }
+  @media only screen and (max-width: 415px) {
+    .slick-slide:nth-child(6) {
+      margin-top: 30px;
+    }
+  }
+}

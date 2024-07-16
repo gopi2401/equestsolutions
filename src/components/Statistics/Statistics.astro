@@ -1,0 +1,95 @@
+---
+// import { useState } from 'react';
+// import CountUp from "react-countup";
+// import { Link } from 'react-router-dom';
+// import VisibilitySensor from "react-visibility-sensor";
+import { Image } from "astro:assets";
+import BgImg from "../../assets/media/bg-statistics.jpg";
+// import "./statistics.scss";
+
+import {
+  statisticsHomeData,
+  techListData,
+} from "../ComponentAPI/statisticsAPI";
+
+// const [focus, setFocus] = React.useState(false);
+const { title, description, linkName } = Astro.props;
+---
+
+<section
+  class="statistics bg-fixed bg-overlay"
+  style={{ backgroundImage: "url(" + BgImg + ")" }}
+>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-5 col-lg-5">
+        <div class="statistics__content text-light">
+          <div class="heading_wrapper">
+            <h2 class="sec_heading sec_heading-medium with_border text-light">
+              {title}
+            </h2>
+          </div>
+          <p>{description}</p>
+          {
+            /* <div class="btn-wrapper">
+                                    <Link to="/about" class="btn btn_secondary">{props.linkName}</Link>
+                                </div> */
+          }
+
+          <ul class="statistics__tech-list list-unstyled">
+            {
+              techListData.map((val, index) => {
+                return (
+                  <li key={index}>
+                    <Image
+                      src={val.img}
+                      class="img-fluid"
+                      alt={val.title}
+                      height={"100%"}
+                      width={"100%"}
+                    />
+                  </li>
+                );
+              })
+            }
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-7 col-lg-6 offset-lg-1">
+        <div class="statistics__boxes">
+          {
+            statisticsHomeData.map((val, index) => {
+              return (
+                <div class={"statistics__box"} key={index}>
+                  <div class="statistics__box-inner">
+                    {/* <CountUp
+                      start={focus ? 0 : null}
+                      end={val.countNum}
+                      duration={3}
+                      suffix={val.suffix}
+                      redraw={true}
+                    >
+                      {({ countUpRef }) => (
+                        <VisibilitySensor
+                          onChange={(isVisible) => {
+                            if (isVisible) {
+                              setFocus(true);
+                            }
+                          }}
+                        >
+                          <span class="statistics__count" ref={countUpRef} />
+                        </VisibilitySensor>
+                      )}
+                    </CountUp> */}
+                    <h3 class="statistics__title">{val.title}</h3>
+                  </div>
+                </div>
+              );
+            })
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

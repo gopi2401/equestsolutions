@@ -1,0 +1,58 @@
+---
+// import { Tabs, Tab } from "react-bootstrap";
+import technologyData from "../ComponentAPI/technologyAPI";
+// import "./TechnologyTabs.scss";
+const { title } = Astro.props;
+---
+
+<section class="technology">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="technology__heading">
+          <div class="heading_wrapper">
+            <h2 class="sec_heading sec_heading-medium with_border">
+              {title}
+            </h2>
+          </div>
+        </div>
+        <div class="technology__tab-list">
+          <!-- <Tabs>
+            {
+              technologyData.map((val, index) => {
+                return (
+                  <Tab eventKey={"tab-" + index} key={index} title={val.title}>
+                    <div class="technology__tab-wrapper">
+                      <div class="technology__img">
+                        <img src={val.mainImg} alt={val.title} loading="lazy" />
+                      </div>
+                      <ul class="technology__icon-list list-unstyled">
+                        {val.images.map((iconVal, iconIndex) => {
+                          return (
+                            <li key={iconIndex}>
+                              <img
+                                src={iconVal.image}
+                                class="img-fluid"
+                                alt=""
+                                loading="lazy"
+                                width={41}
+                                height={41}
+                              />
+                              <span class="technology__icon-name">
+                                {iconVal.title}
+                              </span>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  </Tab>
+                );
+              })
+            }
+          </Tabs> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,175 @@
+.about_landing_sec .about_landing-desc {
+  color: #1a1b25;
+}
+.about_landing_sec .about_landing-img {
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 1199px) {
+  .about_landing_sec .about_landing-img {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .about_landing_sec .about_landing-img {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .about_landing_sec .about_landing-img {
+    margin-bottom: 40px;
+  }
+}
+.service-list {
+  padding: 45px 0 0;
+  position: relative;
+}
+@media only screen and (max-width: 1199px) {
+  .service-list {
+    padding-top: 35px;
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .service-list {
+    padding: 30px 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .service-list {
+    padding: 15px 0 0;
+  }
+}
+.service-list .service-row {
+  padding: 50px 0;
+}
+@media only screen and (max-width: 1199px) {
+  .service-list .service-row {
+    padding: 40px 0;
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .service-list .service-row {
+    padding: 25px 0 40px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .service-list .service-row {
+    padding: 15px 0 30px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .service-list .service-image-box {
+    padding-right: 25px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .service-list .service-image-box {
+    margin-bottom: 30px;
+  }
+}
+.service-list .service-image-box figure {
+  position: relative;
+  text-align: center;
+}
+.service-list .service-image-box img {
+  position: static;
+}
+@media only screen and (min-width: 992px) {
+  .service-list .service-content-box {
+    padding-left: 25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .service-list .service-content-box {
+    text-align: center;
+  }
+}
+.service-list .service-content-box h4 {
+  color: #0b132a;
+  font-family: Poppins, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 1199px) {
+  .service-list .service-content-box h4 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .service-list .service-content-box h4 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .service-list .service-content-box h4 {
+    font-size: 24px;
+  }
+}
+.service-list .service-content-box p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 1199px) {
+  .service-list .service-content-box p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .service-list .service-content-box p {
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .service-list .service-content-box p {
+    margin-bottom: 15px;
+  }
+}
+.service-list .service-content-box .technology__icons {
+  flex-wrap: wrap;
+  margin-top: 0;
+  max-width: 500px;
+}
+.service-list .service-content-box .technology__icons li {
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 767px) {
+  .service-list .service-content-box .technology__icons {
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+.service-list .service-content-box .btn-wrapper {
+  margin-top: 35px;
+}
+.service-list .service-list-wrapper:nth-child(odd) {
+  background: linear-gradient(
+    260.45deg,
+    #fff7f559 0.47%,
+    #fff3f033 54.7%,
+    #ffebe600 100.8%
+  );
+}
+.service-list .service-list-wrapper:nth-child(2n) .service-row {
+  flex-direction: row-reverse;
+}
+@media only screen and (min-width: 992px) {
+  .service-list
+    .service-list-wrapper:nth-child(2n)
+    .service-row
+    .service-image-box {
+    padding-left: 30px;
+    padding-right: 15px;
+  }
+  .service-list
+    .service-list-wrapper:nth-child(2n)
+    .service-row
+    .service-content-box {
+    padding-left: 15px;
+    padding-right: 30px;
+  }
+}
+/*# sourceMappingURL=136.f0d68031.chunk.css.map*/

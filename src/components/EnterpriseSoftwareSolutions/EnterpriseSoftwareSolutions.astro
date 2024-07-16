@@ -1,0 +1,52 @@
+---
+import { Image } from "astro:assets";
+import enterpriseSoftwareSolutions from "../ComponentAPI/enterpriseSoftwareSolutionsAPI";
+// import "./EnterpriseSoftwareSolutions.scss";
+const { title, description } = Astro.props;
+---
+
+<section class="words_from_client_sec sec_pb we-ecommerce-view">
+  <div class="container">
+    <h2 class="sec_heading sec_heading-medium with_border">
+      {title}
+    </h2>
+    <p class="we-ecommerce-view_desciption">{description}</p>
+    <div id="pph-hireme"></div>
+    <div class="col-12 row we-ecommerce-view_view mt-5">
+      {
+        enterpriseSoftwareSolutions.map((val) => {
+          return (
+            <div key={val.id} class="col-lg-4 col-md-6 we-ecommerce-view_card">
+              {val.pathUrl.length > 0 ? (
+                // {val.id === 2 ? (
+                <a
+                  class="we-ecommerce-view_img_border"
+                  href={val.pathUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src={val.img}
+                    class="we-ecommerce-view_img"
+                    alt="We are Interactivated E Commerce"
+                    loading="lazy"
+                  />
+                </a>
+              ) : (
+                <div class="we-ecommerce-view_img_border">
+                  <Image
+                    src={val.img}
+                    class="we-ecommerce-view_img"
+                    alt="We are Interactivated E Commerce"
+                    loading="lazy"
+                  />
+                </div>
+              )}
+              <h3 class="we-ecommerce-view__title col-md-10">{val.title}</h3>
+            </div>
+          );
+        })
+      }
+    </div>
+  </div>
+</section>

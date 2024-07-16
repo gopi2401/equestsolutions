@@ -1,0 +1,68 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HomeLanding from "../components/Home/HomeLanding.astro";
+import HomeMyBike from "../components/Home/HomeMyBike.astro";
+import WhatWeOffer from "../components/Home/WhatWeOffer.astro";
+import ServicesWeProvide from "../components/ServicesWeProvide/ServicesWeProvide.astro";
+import Work from "../components/Work/Work.astro";
+import Statistics from "../components/Statistics/Statistics.astro";
+import TechnologyTabs from "../components/Technologies/TechnologyTabs.astro";
+import ClientLogos from "../components/ClientLogos/ClientLogos.astro";
+import HireYourTeam from "../components/Home/HireYourTeam.astro";
+import WordsFromClients from "../components/WordsFromClients/WordsFromClients.astro";
+import EnterpriseSoftwareSolutions from "../components/EnterpriseSoftwareSolutions/EnterpriseSoftwareSolutions.astro";
+import AwardsAndAchievements from "../components/AwardsAchievements/AwardsAchievements.astro";
+import WeAreHiring from "../components/WeAreHiring/WeAreHiring.astro";
+
+// // import Blog from "../../component/Blog";
+// import { Helmet } from "react-helmet";
+---
+
+<Layout
+  title=" Web & Mobile Apps Software Development Company, IT Services & Solutions | eQuest Solutions"
+  description="eQuest Solutions is a Leading Custom Software Development, E-commerce, Web & Mobile Development Company that offers top-notch services to build scalable custom software solutions for enterprises and startups."
+>
+  <div class="page_content mobile_page_padding">
+    <HomeLanding linkName="Find Out More" />
+
+    <HomeMyBike
+      description="A full-fledged, easy-to-scale, cloud-based solution that would take care of their heavy inbound & outbound traffic, registrations, and cycle-flow."
+      linkName="Learn more"
+    />
+
+    <WhatWeOffer />
+
+    <ServicesWeProvide
+      title="Services We Provide"
+      description="We are not just an outsourced company but a digital tech partner to our clients, aiding their business growth potential to reach heights."
+      linkName=""
+    />
+
+    <Work title="Our Work" />
+    <Statistics
+      title="From Conceptualization to Completion"
+      description="Ever since the inception in 2012 the team at eQuest has been delivering top-quality software solutions. We have built and maintained our global client base with our sheer efforts & dedication. The round-the-clock availability of our business analysts, designers, and developers help our clients to get real-time solutions to their problems."
+      linkName="About Us"
+    />
+
+    <TechnologyTabs title="Our Expertise" />
+
+    <ClientLogos title="Prestigious Clients" />
+
+    <HireYourTeam
+      title="hire your best team"
+      description="We are an all-rounder service-providing company that welcomes ideas and customizations from the client's end with open arms. Choose us as your digital partner and capture the market share you have been dreaming of…"
+      linkName="Let’s work together"
+    />
+    <WordsFromClients />
+    <EnterpriseSoftwareSolutions
+      title="Enterprise Software Solutions, Accredited By"
+      description=""
+    />
+    <AwardsAndAchievements title={"Awards & Achievements"} />
+    <WeAreHiring
+      description={"Join our ever expanding web development and business development teams. Apply today!"}
+      link={"https://forms.gle/vZ2sduLBcvTeZ61L9"}
+    />
+  </div>
+</Layout>

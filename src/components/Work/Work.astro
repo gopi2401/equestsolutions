@@ -1,0 +1,22 @@
+---
+import WorkCard from "./WorkCard/WorkCard.astro";
+// import "./work.scss";
+const { title } = Astro.props;
+---
+
+<section class="work">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="heading_wrapper">
+          <h2 class="sec_heading sec_heading-medium with_border">
+            {title}
+          </h2>
+        </div>
+      </div>
+      <div class="col-lg-10 offset-lg-1">
+        <WorkCard />
+      </div>
+    </div>
+  </div>
+</section>

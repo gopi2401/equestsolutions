@@ -1,0 +1,60 @@
+---
+import Layout from "../layouts/Layout.astro";
+import AboutLanding from "../components/About/AboutLanding.astro";
+import EquestMantra from "../components/About/EquestMantra.astro";
+import AwardsAndAchievements from "../components/AwardsAchievements/AwardsAchievements.astro";
+import InOurEthics from "../components/About/InOurEthics.astro";
+import AboutImages from "../components/About/AboutImages.astro";
+import WhoWeAre from "../components/About/WhoWeAre.astro";
+import EquestLeader from "../components/About/EquestLeader.astro";
+import WordsFromClients from "../components/WordsFromClients/WordsFromClients.astro";
+import WeAreHiring from "../components/WeAreHiring/WeAreHiring.astro";
+// import Blog from "../../component/Blog";
+// import { Helmet } from "react-helmet";
+---
+
+<Layout
+  title="About eQuest Solutions | eQuest Solutions"
+  description="We know that business is about people, so we design our products with a human-centric approach that makes it easy for you to get results and keep your team engaged, happy and motivated."
+>
+  <div class="page_content page_padding">
+    <!-- <Helmet>
+    <title>About eQuest Solutions | eQuest Solutions</title>
+    <meta
+      name="description"
+      content=""
+    />
+  </Helmet> -->
+    <AboutLanding />
+    <EquestMantra title="eQuest Mantra" />
+    <AwardsAndAchievements title="Awards & Achievements" />
+    <InOurEthics />
+    <AboutImages />
+    <WhoWeAre
+      title="who we are"
+      description='Our work-philosophy is "Life is Short, Build stuff that matters", which enables us to be motiviated, engergized and apply out-of-the-box thinking to provide better quality Softwares. Our Offshore Software outsourcing services and solutions are innovated with a keen focus on scalable, over-the-clock, expandable, secure and reliable business systems. Our Offshore Development model has been proven to provide our clients value for their money and greater return on their investments.'
+    />
+    <EquestLeader title="Our Team" />
+    {
+      /* <Blog 
+        title="Blogs" /> */
+    }
+    <!-- title={
+    (
+      <>
+        words from <span class="highlighted-text">clients</span>
+      </>
+    )
+  } -->
+    <WordsFromClients />
+    <!-- title={(
+    <>
+      We are <span class="teal_text">hiring now</span>
+    </>
+  )} -->
+    <WeAreHiring
+      description="Join our ever expanding web development and business development teams. Apply today!"
+      link="https://forms.gle/vZ2sduLBcvTeZ61L9"
+    />
+  </div>
+</Layout>

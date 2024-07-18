@@ -1,7 +1,9 @@
 ---
-// import { Tab, Tabs } from "react-bootstrap";
+import TabsBootstrap from "../TabsBootstrap";
 import whatWeOfferData from "../ComponentAPI/whatWeOfferAPI";
+import SetInnerHTML from "../SetInnerHTML";
 // import "./WhatWeOffer.scss";
+const { title } = Astro.props;
 ---
 
 <section class="what_we_offer_sec sec_pt sec_pb gradient_bg">
@@ -10,36 +12,13 @@ import whatWeOfferData from "../ComponentAPI/whatWeOfferAPI";
       <div class="col-md-4 col-12">
         <div class="heading_wrapper mb-5 mb-md-0">
           <h2 class="sec_heading sec_heading-medium with_border">
-            <!-- {props.title} -->
-            what <br />
-            we offer?
+            <SetInnerHTML data={title} />
           </h2>
         </div>
       </div>
       <div class="col-md-8 col-12">
         <div class="what_we_offer_content_wrapper">
-          <!-- <Tabs id="uncontrolled-tab-example" class="mb-3">
-            {
-              whatWeOfferData.map((val, index) => {
-                return (
-                  <Tab
-                    eventKey={"offer-tab-" + index}
-                    key={index}
-                    title={val.title}
-                  >
-                    <div class="tab_content">
-                      <p>{val.description}</p>
-                      <ul>
-                        {val.detailList.map((val, index) => {
-                          return <li key={index}>{val.listItem}</li>;
-                        })}
-                      </ul>
-                    </div>
-                  </Tab>
-                );
-              })
-            }
-          </Tabs> -->
+          <TabsBootstrap client:only="react" data={whatWeOfferData} />
         </div>
       </div>
     </div>

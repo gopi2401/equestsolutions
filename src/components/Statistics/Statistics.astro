@@ -1,24 +1,24 @@
 ---
-// import { useState } from 'react';
-// import CountUp from "react-countup";
 // import { Link } from 'react-router-dom';
-// import VisibilitySensor from "react-visibility-sensor";
+
 import { Image } from "astro:assets";
-import BgImg from "../../assets/media/bg-statistics.jpg";
+// import BgImg from "../../assets/media/bg-statistics.jpg";
 // import "./statistics.scss";
 
 import {
   statisticsHomeData,
   techListData,
 } from "../ComponentAPI/statisticsAPI";
+import CountUp from "../CountUp";
 
-// const [focus, setFocus] = React.useState(false);
-const { title, description, linkName } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <section
   class="statistics bg-fixed bg-overlay"
-  style={{ backgroundImage: "url(" + BgImg + ")" }}
+  style={{
+    backgroundImage: "url(" + "/src/assets/media/bg-statistics.jpg" + ")",
+  }}
 >
   <div class="container">
     <div class="row align-items-center">
@@ -40,14 +40,14 @@ const { title, description, linkName } = Astro.props;
             {
               techListData.map((val, index) => {
                 return (
-                  <li key={index}>
-                    <Image
-                      src={val.img}
-                      class="img-fluid"
-                      alt={val.title}
-                      height={"100%"}
-                      width={"100%"}
-                    />
+                  <li value={index}>
+                    <img
+                        src={val.img}
+                        class="img-fluid"
+                        alt={val.title}
+                        height={"100%"}
+                        width={"100%"}
+                      />
                   </li>
                 );
               })
@@ -61,27 +61,9 @@ const { title, description, linkName } = Astro.props;
           {
             statisticsHomeData.map((val, index) => {
               return (
-                <div class={"statistics__box"} key={index}>
+                <div class={"statistics__box"} id={String(index)}>
                   <div class="statistics__box-inner">
-                    {/* <CountUp
-                      start={focus ? 0 : null}
-                      end={val.countNum}
-                      duration={3}
-                      suffix={val.suffix}
-                      redraw={true}
-                    >
-                      {({ countUpRef }) => (
-                        <VisibilitySensor
-                          onChange={(isVisible) => {
-                            if (isVisible) {
-                              setFocus(true);
-                            }
-                          }}
-                        >
-                          <span class="statistics__count" ref={countUpRef} />
-                        </VisibilitySensor>
-                      )}
-                    </CountUp> */}
+                    <CountUp data={val} client:only="react" />
                     <h3 class="statistics__title">{val.title}</h3>
                   </div>
                 </div>

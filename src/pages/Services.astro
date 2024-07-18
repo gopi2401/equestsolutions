@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ServicesLanding from "../components/Services/ServicesLanding.astro";
+import ServicesList from "../components/Services/ServicesList.astro";
+import TechnologyTabs from "../components/Technologies/TechnologyTabs.astro";
+import WordsFromClients from "../components/WordsFromClients/WordsFromClients.astro";
+import WeAreHiring from "../components/WeAreHiring/WeAreHiring.astro";
+// import ServiceListBox from "./Services-list-box-section/ServiceListBox";
+// import { Helmet } from "react-helmet";
+// import Blog from "../../component/Blog/Blog";
+---
+
+<Layout
+  title="Best Software and IT Services | Hire Software Developers | eQuest Solutions"
+  description="We provide the best software services. We have best software developers and a team of professionals who can develop your project according to your requirements, budget and deadline."
+>
+  <div class="page_content page_padding">
+    <ServicesLanding
+      description=" We help our customers to develop custom software applications and assist them throughout the entire software development Life Cycle, including project management, systems analysis and design, development, implementation, training and application maintenance."
+    />
+    <ServicesList />
+    {/* <ServiceListBox /> */}
+    <TechnologyTabs title="Our Experties" />
+    {/* <Blog title="Blogs" /> */}
+    <!-- title={(
+    <>
+      words from <span class="highlighted-text">clients</span>
+    </>
+  )} -->
+    <WordsFromClients />
+    <!-- title={
+    (
+      <>
+        We are <span class="teal_text">hiring now</span>
+      </>
+    )
+  } -->
+    <WeAreHiring
+      description={"Join our ever expanding web development and business development teams. Apply today!"}
+      link={"https://forms.gle/vZ2sduLBcvTeZ61L9"}
+    />
+  </div>
+</Layout>

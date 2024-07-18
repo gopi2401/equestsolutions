@@ -16,7 +16,10 @@ const { title, description } = Astro.props;
       {
         enterpriseSoftwareSolutions.map((val) => {
           return (
-            <div key={val.id} class="col-lg-4 col-md-6 we-ecommerce-view_card">
+            <div
+              id={String(val.id)}
+              class="col-lg-4 col-md-6 we-ecommerce-view_card"
+            >
               {val.pathUrl.length > 0 ? (
                 // {val.id === 2 ? (
                 <a

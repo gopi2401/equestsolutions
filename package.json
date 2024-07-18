@@ -10,8 +10,21 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.11.5",
     "@astrojs/check": "^0.8.1",
+    "@astrojs/react": "^3.6.0",
+    "@types/react": "^18.3.3",
+    "astro": "^4.11.5",
     "typescript": "^5.5.3"
+  },
+  "devDependencies": {
+    "@types/react-bootstrap": "^0.32.37",
+    "@types/react-modal-video": "^1.2.3",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.4",
+    "react-countup": "^6.5.3",
+    "react-dom": "^18.3.1",
+    "react-modal-video": "^2.0.2",
+    "react-slick": "^0.30.2",
+    "react-visibility-sensor": "^5.1.1"
   }
 }

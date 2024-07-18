@@ -1,61 +1,9 @@
 ---
-// import Slider from "react-slick";
-import awardsAndAchievementsData from "../ComponentAPI/awardsAndAchievementsAPI";
-// import "./AwardsAchievements.scss";
+import SliderAstro2 from "../SliderAstro2";
 
-const awardSettings = {
-  dots: false,
-  infinite: true,
-  speed: 1000,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  touchThreshold: 30,
-  // centerPadding: "180px",
-  centerMode: false,
-  autoplay: false,
-  responsive: [
-    {
-      breakpoint: 1440,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        centerMode: true,
-      },
-    },
-    {
-      breakpoint: 1199,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        centerPadding: "10px",
-      },
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        centerPadding: "10px",
-      },
-    },
-    {
-      breakpoint: 575,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        centerPadding: "10px",
-      },
-    },
-    {
-      breakpoint: 415,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerPadding: "60px",
-      },
-    },
-  ],
-};
+// import Slider from "react-slick";
+// import awardsAndAchievementsData from "../ComponentAPI/awardsAndAchievementsAPI";
+// import "./AwardsAchievements.scss";
 
 const { title } = Astro.props;
 ---
@@ -66,25 +14,7 @@ const { title } = Astro.props;
       {title}
     </h2>
     <div class="mt-5 pt-5">
-      <!-- <Slider {...awardSettings}>
-        {
-          awardsAndAchievementsData.map((val) => {
-            return (
-              <div key={val.id} class="d-flex align-items-center">
-                <a href={val.pathUrl} target="_blank" rel="noopener noreferrer">
-                  <img
-                    src={val.img}
-                    class="slider-img"
-                    alt="top cross platform mobile app development companies"
-                    style={{ height: val.height, width: val.width }}
-                    loading="lazy"
-                  />
-                </a>
-              </div>
-            );
-          })
-        }
-      </Slider> -->
+     <SliderAstro2 client:only="react"/>
     </div>
   </div>
 </section>

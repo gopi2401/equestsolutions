@@ -23,14 +23,27 @@ import WeAreHiring from "../components/WeAreHiring/WeAreHiring.astro";
   description="eQuest Solutions is a Leading Custom Software Development, E-commerce, Web & Mobile Development Company that offers top-notch services to build scalable custom software solutions for enterprises and startups."
 >
   <div class="page_content mobile_page_padding">
-    <HomeLanding linkName="Find Out More" />
+    <HomeLanding
+      title={"your ideas. Our Innovation. <br /> Robust &nbsp;"}
+      description={`
+            We provide quick and efficient design and development solutions for
+            <span> web</span>, <span>mobile</span>, <span>cloud</span> and
+            <span> IoT</span> with 100% delivery successes.
+         `}
+      linkName="Find Out More"
+    />
 
     <HomeMyBike
+      title={`India’s First Bike Sharing Program
+            <span className="app_color"> MYBYK</span> runs on our code`}
       description="A full-fledged, easy-to-scale, cloud-based solution that would take care of their heavy inbound & outbound traffic, registrations, and cycle-flow."
       linkName="Learn more"
     />
 
-    <WhatWeOffer />
+    <WhatWeOffer
+      title={`what <br />
+            we offer?`}
+    />
 
     <ServicesWeProvide
       title="Services We Provide"
@@ -54,7 +67,7 @@ import WeAreHiring from "../components/WeAreHiring/WeAreHiring.astro";
       description="We are an all-rounder service-providing company that welcomes ideas and customizations from the client's end with open arms. Choose us as your digital partner and capture the market share you have been dreaming of…"
       linkName="Let’s work together"
     />
-    <WordsFromClients />
+    <WordsFromClients title={`words from <span className="highlighted-text">clients</span>`}/>
     <EnterpriseSoftwareSolutions
       title="Enterprise Software Solutions, Accredited By"
       description=""

@@ -1,14 +1,15 @@
 ---
 // import "./ServicesList.scss";
 import { Image } from "astro:assets";
-import serviceItemCardData from "../../ComponentAPI/servicesItemAPI";
+import serviceItemCardData from "../ComponentAPI/servicesItemAPI";
+import SetInnerHTML from "../SetInnerHTML";
 ---
 
 <section class="service-list">
   {
     serviceItemCardData.map((val, index) => {
       return (
-        <div class="service-list-wrapper" key={index}>
+        <div class="service-list-wrapper" id={String(index)}>
           <div class="container">
             <div class="row service-row align-items-md-center">
               <div class="col-lg-6 service-image-box">
@@ -19,11 +20,12 @@ import serviceItemCardData from "../../ComponentAPI/servicesItemAPI";
               <div class="col-lg-6 service-content-box">
                 <h4>{val.title}</h4>
                 {/* <p>{val.description}</p> */}
-                <div dangerouslySetInnerHTML={{ __html: val.description }} />
+                {/* <div dangerouslySetInnerHTML={{ __html: val.description }} /> */}
+                <SetInnerHTML description={val.description} />
                 <ul class="technology__icons">
                   {val.techImages.map((iconVal, iconIndex) => {
                     return (
-                      <li key={iconIndex}>
+                      <li value={iconIndex}>
                         <div class="technology__icon">
                           <Image
                             src={iconVal.image}

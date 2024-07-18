@@ -1,0 +1,29 @@
+---
+// import "./EquestMantra.scss";
+const { title } = Astro.props;
+---
+
+<section class="eq_mantra_sec white_bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-xxl-9 col-12 mx-auto">
+        <div class="eq_mantra_content_wrapper sec_pt sec_pb">
+          <div class="eq_mantra-left">
+            <img
+              src="/images/quote.svg"
+              alt="quote_img"
+              class="img-fluid me-2 me-md-3"
+            />
+            {title}
+          </div>
+          <div class="eq_mantra-right">
+            <p>
+              Life is Short,
+              <br /> Build stuff that matters
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

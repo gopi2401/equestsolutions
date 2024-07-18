@@ -1,29 +1,30 @@
 ---
+import { Image } from "astro:assets";
 import workCardData from "../../ComponentAPI/workCardAPI";
 // import "./WorkCard.scss";
+import SetInnerHTML from "../../SetInnerHTML";
 ---
 
 <>
   {
     workCardData.map((val, index) => {
       return (
-        <div class={"work-card " + val.clsName} key={index}>
+        <div class={"work-card " + val.clsName} id={String(index)}>
           <div class="work-card__content">
             <h4 class="work-card__title">{val.title}</h4>
-            <div
-              class="work-card__desc"
-              dangerouslySetInnerHTML={{ __html: val.description }}
-            />
+            <div class="work-card__desc">
+              <SetInnerHTML data={val.description} />
+            </div>
             {/* <Link to="/" class="btn btn-light">Read More</Link> */}
           </div>
           <div class="work-card__img">
-            <img
+            <Image
               src={val.image}
               class="img-fluid"
               alt=""
               loading="lazy"
-              width={val?.imgeWidth}
-              height={val?.imageHeight}
+              width={parseInt(val?.imgeWidth)}
+              height={parseInt(val?.imageHeight)}
             />
           </div>
         </div>

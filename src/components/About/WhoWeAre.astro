@@ -1,0 +1,49 @@
+---
+// import React, { useState } from "react";
+// import ModalVideo from "react-modal-video";
+// import "./WhoWeAre.scss";
+import bgVideo from "../../assets/media/poster-img.png";
+
+// const [isOpen, setOpen] = useState(false);
+
+const { title, description } = Astro.props;
+---
+
+<section class="who_we_are_sec sec_pt">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-xl-8 col-12 mx-auto">
+        <div class="who_we_are_content_wrapper px-lg-4">
+          <div class="heading_wrapper text-center mb-4">
+            <h2 class="big_heading">{title}</h2>
+          </div>
+          <div class="who_we_are_desc text-center mb-4 mb-lg-5">
+            <p>{description}</p>
+          </div>
+          <div class="who_we_are_video mx-lg-5">
+            {
+              /*  <ModalVideo
+              channel="youtube"
+              autoplay
+              isOpen={isOpen}
+              videoId="rMWIhiYFsZU"
+              onClose={() => setOpen(false)}
+            />*/
+            }
+            {/*onClick={() => setOpen(true)} */}
+            <div class="who_we_are_video_wrapper">
+              <div
+                class="who_we_are_video-img"
+                style={{ backgroundImage: `url(${bgVideo})` }}
+              >
+              </div>
+              <div class="who_we_are_video-play">
+                <img src="/images/play.png" alt="" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

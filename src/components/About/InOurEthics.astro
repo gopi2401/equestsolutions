@@ -1,0 +1,43 @@
+---
+//  import "./InOurEthics.scss";
+import workEthicCard from "../ComponentAPI/workEthicAPI";
+---
+
+<section class="in_our_ethics_sec sec_pt sec_pb gradient_bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-12 mx-auto">
+        <div class="in_our_ethics_content_wrapper">
+          <div class="row">
+            <div class="col-md-4 col-12">
+              <div class="heading_wrapper">
+                <h2 class="sec_heading sec_heading-medium with_border">
+                  In our work <br />
+                  ethics
+                </h2>
+              </div>
+            </div>
+            <div class="col-md-8 col-12">
+              <div class="in_our_ethics_blocks_wrapper px-xl-5">
+                {
+                  workEthicCard.map((val, index) => {
+                    return (
+                      <div class="in_our_ethics_block" id={String(index)}>
+                        <p class="sec_heading sec_sub_title mb-2">
+                          {val.title}
+                        </p>
+                        <div class="in_our_ethics-desc">
+                          <p>{val.description}</p>
+                        </div>
+                      </div>
+                    );
+                  })
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,87 @@
+---
+// import React from "react";
+// import Slider from "react-slick";
+// import "./EquestLeader.scss";
+import leaderItemData from "../ComponentAPI/leaderItemAPI";
+
+const leaderSettings = {
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  centerPadding: "150px",
+  centerMode: true,
+  autoplay: true,
+  responsive: [
+    {
+      breakpoint: 1440,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 1199,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        centerPadding: "60px",
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerPadding: "60px",
+      },
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        centerPadding: "30px",
+      },
+    },
+    {
+      breakpoint: 414,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerPadding: "60px",
+      },
+    },
+  ],
+};
+const { title } = Astro.props;
+---
+
+<section class="eq_leader_sec sec_pt sec_pb">
+  <div class="container">
+    <div class="heading_wrapper text-center mb-3 mb-md-4 mb-lg-5">
+      <h2 class="big_heading">{title}</h2>
+    </div>
+  </div>
+
+  <div class="eq_leader_slider_wrapper">
+    <!-- <Slider {...leaderSettings}>
+          {leaderItemData.map((val, index) => {
+            return (
+              <div class="item" key={index}>
+                <div class="eq_leader_content_wrapper">
+                  <div class="eq_leader-img">
+                    <img src={val.leaderImg} alt="" class="img-fluid" />
+                  </div>
+                  <p class="eq_leader-name">{val.leaderName}</p>
+                  <p class="eq_leader-designation">
+                    {val.leaderOccupation}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </Slider> -->
+  </div>
+</section>

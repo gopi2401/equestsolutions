@@ -1,0 +1,6 @@
+---
+import { Image } from "astro:assets";
+const { img, alt } = Astro.props;
+---
+
+<Image src={img} class="img-fluid" alt={alt} width={41} height={41} />

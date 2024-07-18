@@ -9,6 +9,7 @@ import mongodb from "../../assets/media/mongodb.svg";
 // import { Link } from "react-router-dom";
 import mybykVideo from "../../assets/media/mybyk-new.mp4";
 import { Image } from "astro:assets";
+import SetInnerHTML from "../SetInnerHTML";
 const technologyIconData = [
   {
     id: 1,
@@ -35,7 +36,7 @@ const technologyIconData = [
     image: mongodb,
   },
 ];
-const { description } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <section class="home_mybike_sec sec_pt sec_pb mybike_new" id="home_mybike">
@@ -43,7 +44,7 @@ const { description } = Astro.props;
     <div class="row align-items-center">
       <div class="col-md-5 col-12">
         <div class="mybike_sec_img mb-4 mb-md-0">
-          <video src={mybykVideo} loop muted autoPlay playsInline></video>
+          <video src={mybykVideo} loop muted autoplay playsinline></video>
         </div>
       </div>
       <div class="col-md-7 col-12">
@@ -77,8 +78,7 @@ const { description } = Astro.props;
           </a>
           <div class="heading_wrapper">
             <h2 class="sec_heading sec_heading-medium">
-              India’s First Bike Sharing Program
-              <span class="app_color"> MYBYK</span> runs on our code
+              <SetInnerHTML data={title} />
             </h2>
           </div>
           <div class="desc mb-3">
@@ -88,7 +88,7 @@ const { description } = Astro.props;
             {
               technologyIconData.map((val, index) => {
                 return (
-                  <li key={index}>
+                  <li value={index}>
                     <div class="technology__icon">
                       <Image
                         src={val.image}

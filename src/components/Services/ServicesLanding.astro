@@ -1,7 +1,9 @@
 ---
 import { Image } from "astro:assets";
-import serviceBanner from "../../../images/bg-service.svg";
+import serviceBanner from "../../assets/media/bg-service.svg";
 // import "./ServicesLanding.scss";
+
+const { description } = Astro.props;
 ---
 
 <section class="about_landing_sec sec_pt sec_pb">
@@ -12,9 +14,13 @@ import serviceBanner from "../../../images/bg-service.svg";
           <div class="about_landing-img">
             <Image src={serviceBanner} alt="" class="img-fluid" />
           </div>
-          <h1 class="big_heading mb-3">{props.title}</h1>
+          <h1 class="big_heading mb-3">
+            Wide range <span class="highlighted-text">IT, QA </span>and
+            <br />
+            <span class="highlighted-text">R&D </span>Services
+          </h1>
           <div class="about_landing-desc">
-            <p>{props.description}</p>
+            <p>{description}</p>
           </div>
         </div>
       </div>

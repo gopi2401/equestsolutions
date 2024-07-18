@@ -1,7 +1,7 @@
-import clientImg1 from "../images/andrew_david.png";
-import clientImg4 from "../images/mauren.png";
-import clientImg5 from "../images/jordy_backes.png";
-import clientImg6 from "../images/client_img6.png";
+import clientImg1 from "../../assets/media/andrew_david.png";
+import clientImg4 from "../../assets/media/mauren.png";
+import clientImg5 from "../../assets/media/jordy_backes.png";
+import clientImg6 from "../../assets/media/client_img6.png";
 
 const wordsClientData = [
   {

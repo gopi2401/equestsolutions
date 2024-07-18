@@ -1,10 +1,10 @@
-import AppDevelopment from "../images/app-development.svg";
-import EcomDevelopment from "../images/ecommerce-development.svg";
-import Uiux from "../images/ui-ux.svg";
-import QA from "../images/QA.svg";
-import DataAnalytics from "../images/data-migration.svg";
-import Shopify from "../images/shopify-development.svg";
-import Seo from "../images/seo.svg";
+import AppDevelopment from "../../assets/media/app-development.svg";
+import EcomDevelopment from "../../assets/media/ecommerce-development.svg";
+import Uiux from "../../assets/media/ui-ux.svg";
+import QA from "../../assets/media/QA.svg";
+import DataAnalytics from "../../assets/media/data-migration.svg";
+import Shopify from "../../assets/media/shopify-development.svg";
+import Seo from "../../assets/media/seo.svg";
 
 const serviceCardData = [
   {

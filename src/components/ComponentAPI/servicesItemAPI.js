@@ -1,68 +1,68 @@
-import webDevelopment from "../images/vector-web-development.png";
-import cloudservice from "../images/vector-cloud-sass.svg";
-import appdevelopment from "../images/vector-app-development.svg";
-import sassdevelopment from "../images/vector-sass.svg";
-import qualityAssurance from "../images/vector-qa.svg";
-import dataMigration from "../images/vector-data-analysis.svg";
-import offshoreDevelopment from "../images/vector-offshore-development.svg";
-import shopifyDevelopment from "../images/vector-shopify.svg";
-import uiuxDevelopment from "../images/vector-ui-ux.svg";
-import ecomDevelopment from "../images/vector-ecom.svg";
-import seoService from "../images/vector-seo.svg";
-import softwareMigration from "../images/vector-software-migration.svg";
+import webDevelopment from "../../assets/media/vector-web-development.png";
+import cloudservice from "../../assets/media/vector-cloud-sass.svg";
+import appdevelopment from "../../assets/media/vector-app-development.svg";
+import sassdevelopment from "../../assets/media/vector-sass.svg";
+import qualityAssurance from "../../assets/media/vector-qa.svg";
+import dataMigration from "../../assets/media/vector-data-analysis.svg";
+import offshoreDevelopment from "../../assets/media/vector-offshore-development.svg";
+import shopifyDevelopment from "../../assets/media/vector-shopify.svg";
+import uiuxDevelopment from "../../assets/media/vector-ui-ux.svg";
+import ecomDevelopment from "../../assets/media/vector-ecom.svg";
+import seoService from "../../assets/media/vector-seo.svg";
+import softwareMigration from "../../assets/media/vector-software-migration.svg";
 
-import php from "../images/php.svg";
-import wp from "../images/wp.svg";
-import magento from "../images/magento.svg";
-import drupal from "../images/drupal.svg";
-import shopify from "../images/shopify.svg";
-import shopifyplus from "../images/icon-shopify-plus.svg";
-import woo from "../images/icon-woo.svg";
-import ruby from "../images/icon-ruby-on-rails.svg";
-import gql from "../images/icon-graphql.svg";
-import liquid from "../images/icon-liquid.png";
-import html from "../images/html.svg";
-import css from "../images/css.svg";
-import javascript from "../images/javascript.svg";
-import sql from "../images/mysql.svg";
-import bigCommerce from "../images/icon-bigcommerce.svg";
-import mongodb from "../images/mongodb.svg";
-import python from "../images/icon-python.svg";
-import typescript from "../images/typescript.svg";
-import reactnative from "../images/react-native.svg";
-import swift from "../images/swift.svg";
-import kotlin from "../images/kotlin.svg";
-import ps from "../images/icon-adobe-photoshop.svg";
-import xd from "../images/icon-xd.svg";
-import ai from "../images/icon-ai.svg";
-import figma from "../images/icon-figma.svg";
-import zeplin from "../images/icon-zeplin.svg";
-import invision from "../images/icon-invision.svg";
-import jenkins from "../images/jenkins.svg";
-import aws from "../images/aws.svg";
-import digitalocean from "../images/digitalocean.svg";
-import linode from "../images/linode.svg";
-import kubernetes from "../images/kubernetes.svg";
+import php from "../../assets/media/php.svg";
+import wp from "../../assets/media/wp.svg";
+import magento from "../../assets/media/magento.svg";
+import drupal from "../../assets/media/drupal.svg";
+import shopify from "../../assets/media/shopify.svg";
+import shopifyplus from "../../assets/media/icon-shopify-plus.svg";
+import woo from "../../assets/media/icon-woo.svg";
+import ruby from "../../assets/media/icon-ruby-on-rails.svg";
+import gql from "../../assets/media/icon-graphql.svg";
+import liquid from "../../assets/media/icon-liquid.png";
+import html from "../../assets/media/html.svg";
+import css from "../../assets/media/css.svg";
+import javascript from "../../assets/media/javascript.svg";
+import sql from "../../assets/media/mysql.svg";
+import bigCommerce from "../../assets/media/icon-bigcommerce.svg";
+import mongodb from "../../assets/media/mongodb.svg";
+import python from "../../assets/media/icon-python.svg";
+import typescript from "../../assets/media/typescript.svg";
+import reactnative from "../../assets/media/react-native.svg";
+import swift from "../../assets/media/swift.svg";
+import kotlin from "../../assets/media/kotlin.svg";
+import ps from "../../assets/media/icon-adobe-photoshop.svg";
+import xd from "../../assets/media/icon-xd.svg";
+import ai from "../../assets/media/icon-ai.svg";
+import figma from "../../assets/media/icon-figma.svg";
+import zeplin from "../../assets/media/icon-zeplin.svg";
+import invision from "../../assets/media/icon-invision.svg";
+import jenkins from "../../assets/media/jenkins.svg";
+import aws from "../../assets/media/aws.svg";
+import digitalocean from "../../assets/media/digitalocean.svg";
+import linode from "../../assets/media/linode.svg";
+import kubernetes from "../../assets/media/kubernetes.svg";
 
-import selenium from "../images/selenium.svg";
-import istqb from "../images/istqb.png";
-import iiba from "../images/iiba.svg";
+import selenium from "../../assets/media/selenium.svg";
+// import istqb from "../../assets/media/istqb.svg";
+import iiba from "../../assets/media/iiba.svg";
 
-import webflow from "../images/webflow.svg";
-import gempages from "../images/gempages.svg";
-import datocms from "../images/datocms.svg";
-import zapier from "../images/zapier.svg";
+import webflow from "../../assets/media/webflow.svg";
+import gempages from "../../assets/media/gempages.svg";
+import datocms from "../../assets/media/datocms.svg";
+import zapier from "../../assets/media/zapier.svg";
 
-import facebook from "../images/meta.svg";
-import twitter from "../images/twitter.svg";
-import google from "../images/google.svg";
-import tripleWhale from "../images/triple-whale.png";
-import tiktok from "../images/tiktok.svg";
-import sqlAnalysis from "../images/sql.svg";
+import facebook from "../../assets/media/meta.svg";
+import twitter from "../../assets/media/twitter.svg";
+import google from "../../assets/media/google.svg";
+// import tripleWhale from "../../assets/media/triple-whale.png";
+import tiktok from "../../assets/media/tiktok.svg";
+import sqlAnalysis from "../../assets/media/sql.svg";
 
-import tableua from "../images/tableau.png";
-import apacheHadoop from "../images/apache-hadoop.png";
-import apacheSpark from "../images/apache-spark.png";
+// import tableua from "../../assets/media/tableau.png";
+import apacheHadoop from "../../assets/media/apache-hadoop.png";
+// import apacheSpark from "../../assets/media/apache-spark.png";
 
 const serviceItemCardData = [
   {
@@ -76,22 +76,27 @@ const serviceItemCardData = [
       {
         id: 1,
         image: php,
+        title: 'PHP'
       },
       {
         id: 2,
         image: wp,
+        title: 'WP'
       },
       {
         id: 3,
         image: magento,
+        title: 'MAGENTO'
       },
       {
         id: 4,
         image: drupal,
+        title: 'DRUPAL'
       },
       {
         id: 5,
         image: shopify,
+        title: 'SHOPIFY'
       },
     ],
   },
@@ -400,11 +405,11 @@ const serviceItemCardData = [
         image: iiba,
         title: "International Business Analysts Association",
       },
-      {
-        id: 3,
-        image: istqb,
-        title: "International Software Testing Qualifications Board",
-      },
+      // {
+      //   id: 3,
+      //   image: istqb,
+      //   title: "International Software Testing Qualifications Board",
+      // },
     ],
   },
 
@@ -503,11 +508,11 @@ const serviceItemCardData = [
         image: facebook,
         title: "Meta",
       },
-      {
-        id: 3,
-        image: tripleWhale,
-        title: "Triple Whale",
-      },
+      // {
+      //   id: 3,
+      //   image: tripleWhale,
+      //   title: "Triple Whale",
+      // },
       {
         id: 4,
         image: twitter,
@@ -539,21 +544,21 @@ const serviceItemCardData = [
         image: sqlAnalysis,
         title: "SQL",
       },
-      {
-        id: 3,
-        image: tableua,
-        title: "Tableau",
-      },
+      // {
+      //   id: 3,
+      //   image: tableua,
+      //   title: "Tableau",
+      // },
       {
         id: 4,
         image: apacheHadoop,
         title: "Apache Hadoop",
       },
-      {
-        id: 5,
-        image: apacheSpark,
-        title: "Apache Spark",
-      },
+      // {
+      //   id: 5,
+      //   image: apacheSpark,
+      //   title: "Apache Spark",
+      // },
     ],
   },
 ];

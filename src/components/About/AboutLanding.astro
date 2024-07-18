@@ -1,0 +1,35 @@
+---
+// import React from "react";
+// import "./AboutLanding.scss";
+import bannerAbout from "../../assets/media/banner-about.svg";
+import { Image } from "astro:assets";
+---
+
+<section class="about_landing_sec banner-about sec_pt sec_pb">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-lg-8 col-12 mx-auto">
+        <div class="about_landing_content_wrapper text-center">
+          <div class="about_landing-img">
+            <Image src={bannerAbout} alt="" class="img-fluid" />
+          </div>
+          <h1 class="big_heading mb-3">
+            Unleash the Best Results by Hiring
+            <span class="highlighted-text"> Offshore Professionals</span> with Expertise
+            in Numerous Domains.
+          </h1>
+          <div class="about_landing-desc">
+            <p>
+              We are an all-rounder service-providing company that welcomes
+              ideas and customizations from the client's end with open arms.
+              Having served myriad clients from the USA, Canada, Switzerland,
+              UK, Australia, Israel, and the Netherlands, choose us as your
+              digital partner and capture the market share you have been
+              dreaming of…
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

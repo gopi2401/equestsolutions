@@ -12,7 +12,8 @@ import HeroMainImg from "../../assets/media/large-gradient-logo-icon.svg";
 import HeroTopImg from "../../assets/media/hero_laptop_man_woman.svg";
 import clutchBadge from "../../assets/media/clutch-100-list-badge.png";
 import { Image } from "astro:assets";
-const { linkName } = Astro.props;
+import SetInnerHTML from "../SetInnerHTML";
+const { title, description, linkName } = Astro.props;
 ---
 
 <section class="home_landing_sec">
@@ -23,15 +24,12 @@ const { linkName } = Astro.props;
       <div class="col-md-6 col-12 align-self-center">
         <div class="home_landing_content">
           <h1 class="big_heading mb-3">
-            your ideas. Our Innovation. <br /> Robust &nbsp;
+            <SetInnerHTML data={title} />
             <span class="primary_text"> </span>
           </h1>
           <div class="home_landing_desc mb-4">
             <p>
-              We provide quick and efficient design and development solutions
-              for
-              <span> web</span>, <span>mobile</span>, <span>cloud</span> and
-              <span> IoT</span> with 100% delivery successes.
+              <SetInnerHTML data={description} />
             </p>
           </div>
           <a href="/about" class="btn btn_secondary">{linkName}</a>
@@ -90,13 +88,13 @@ const { linkName } = Astro.props;
   </div>
 </section>
 
-<script
+<!-- <script
   is:inline
   src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
 ></script>
 
 <script>
-  const typed = new Typed(".primary_text", {
+  new Typed(".primary_text", {
     strings: ["Results.", "Solutions.", "Progress."],
     autoStart: true,
     loop: true,
@@ -105,4 +103,4 @@ const { linkName } = Astro.props;
     typeSpeed: 40,
     backSpeed: 30,
   });
-</script>
+</script> -->

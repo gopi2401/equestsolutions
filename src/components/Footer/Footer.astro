@@ -6,8 +6,8 @@ import { Image } from "astro:assets";
 import footerBgImg from "../../assets/media/footer_bg.png";
 const footerBg = "../../assets/media/footer_bg.png";
 const footerwebpBg = "../../assets/media/footer_bg.webp";
-//import "./Footer.scss";
 
+const BASE_URL = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 const currentYear = new Date().getUTCFullYear();
 ---
 
@@ -38,7 +38,7 @@ const currentYear = new Date().getUTCFullYear();
           <div class="footer_logo">
             <a href="/">
               <img
-                src="/images/logo_final_dark_bg.png"
+                src={BASE_URL+"/images/logo_final_dark_bg.png"}
                 alt=""
                 class="img-fluid"
                 width={250}
@@ -69,7 +69,7 @@ const currentYear = new Date().getUTCFullYear();
             rel="noreferrer"
           >
             <div class="footer-clutch__logo">
-              <img src="/images/footer-clutch-1.png" alt="clutch logo" />
+              <img src="/public/images/footer-clutch-1.png" alt="clutch logo" />
             </div>
           </a>
         <div
@@ -288,7 +288,7 @@ const currentYear = new Date().getUTCFullYear();
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/images/facebook.svg"}
+                  src={BASE_URL+"/images/facebook.svg"}
                   alt=""
                   class="img-fluid"
                   width={23}
@@ -301,7 +301,7 @@ const currentYear = new Date().getUTCFullYear();
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/images/insta.svg"
+                  src="public/images/insta.svg"
                   alt=""
                   class="img-fluid"
                   width={23}
@@ -314,7 +314,7 @@ const currentYear = new Date().getUTCFullYear();
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/images/linkedin.svg"}
+                  src={BASE_URL+"/images/linkedin.svg"}
                   alt=""
                   class="img-fluid"
                   width={23}
@@ -327,7 +327,7 @@ const currentYear = new Date().getUTCFullYear();
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/images/twiter.svg"
+                  src={BASE_URL+"/images/twiter.svg"}
                   alt=""
                   class="img-fluid"
                   style={{ width: 15 + "px" }}

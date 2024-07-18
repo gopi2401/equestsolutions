@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 // import { Link, NavLink } from "react-router-dom";
 
-// import "./Header.scss";
+const BASE_URL = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 
 const Header = () => {
   const [scroll, setScroll] = useState(0);
@@ -29,9 +29,9 @@ const Header = () => {
           <Navbar expanded={expanded} fixed="top">
             <Container>
               <Navbar.Brand>
-                <a href="/">
+                <a href={BASE_URL+"/"}>
                   <img
-                    src="/images/logo-large-1.png"
+                    src={BASE_URL+"/images/logo-large-1.png"}
                     alt="eQuest Solutions"
                     className="img-fluid"
                     width={150}
@@ -725,7 +725,7 @@ const Header = () => {
 
                   <a
                     className="nav-link"
-                    href="/about"
+                    href={BASE_URL+"/about"}
                     onClick={() =>
                       width <= 991
                         ? setExpanded(expanded ? "" : "expanded")
@@ -737,7 +737,7 @@ const Header = () => {
 
                   <a
                     className="nav-link"
-                    href="/blog"
+                    href={BASE_URL+"/blog"}
                     onClick={() =>
                       width <= 991
                         ? setExpanded(expanded ? "" : "expanded")
@@ -770,7 +770,7 @@ const Header = () => {
                   </NavLink> */}
 
                   <button
-                    href="/contact"
+                    href={BASE_URL+"/contact"}
                     className="header_btn_link"
                     onClick={() =>
                       width <= 991

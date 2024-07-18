@@ -1,7 +1,6 @@
-
 import Slider from "react-slick";
 import wordsClientData from "./ComponentAPI/wordsClientAPI";
-const SliderAstro1=()=>{
+const SliderAstro1 = () => {
   const clientSettings = {
     dots: false,
     infinite: true,
@@ -38,33 +37,35 @@ const SliderAstro1=()=>{
       },
     ],
   };
-    return(    <Slider {...clientSettings}>
-        {wordsClientData.map((val, index) => {
-          return (
-            <div class="item" key={index}>
-              <div class="words_from_client_content_wrapper">
-                <div class="words_from_client-details">
-                  <p>{val.description}</p>
-                </div>
-                <div class="words_from_client-bottom-text">
-                  <p class="words_from_client-name">{val.clientName}</p>
-                  <p class="words_from_client-designation">
-                    {val.clientOccupation}
-                  </p>
-                </div>
-                <div class="words_from_client-img">
-                  <img
-                    src={val.clientImg}
-                    alt=""
-                    class="img-fluid"
-                    loading="lazy"
-                  />
-                </div>
+  return (
+    <Slider {...clientSettings}>
+      {wordsClientData.map((val, index) => {
+        return (
+          <div class="item" key={index}>
+            <div class="words_from_client_content_wrapper">
+              <div class="words_from_client-details">
+                <p>{val.description}</p>
+              </div>
+              <div class="words_from_client-bottom-text">
+                <p class="words_from_client-name">{val.clientName}</p>
+                <p class="words_from_client-designation">
+                  {val.clientOccupation}
+                </p>
+              </div>
+              <div class="words_from_client-img">
+                <Image
+                  src={val.clientImg}
+                  alt=""
+                  class="img-fluid"
+                  loading="lazy"
+                />
               </div>
             </div>
-          );
-        })}
-      </Slider>);
+          </div>
+        );
+      })}
+    </Slider>
+  );
 };
 
 export default SliderAstro1;

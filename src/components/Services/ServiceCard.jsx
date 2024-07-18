@@ -1,7 +1,6 @@
-
 import Slider from "react-slick";
 import serviceCardData from "../ComponentAPI/serviceCardAPI";
-export default  function  (props)  {
+export default  function  ()  {
   var sliderSettings = {
     dots: false,
     speed: 500,
@@ -43,18 +42,17 @@ export default  function  (props)  {
   };
   return (
     <Slider {...sliderSettings}>
-      {
-              serviceCardData.map((val, index) => {
-                return (
-                  <div class="main-services__slider-item" id={String(index)}>
-                    <div
-                      class={"card card--service " + val.clsName}
-                      style={{ background: val.bgColor }}
-                    >
-                      {/* <Link to={val.pathUrl}> */}
-                      <div class="card-img">
+      {serviceCardData.map((val, index) => {
+        return (
+          <div class="main-services__slider-item" id={String(index)}>
+            <div
+              class={"card card--service " + val.clsName}
+              style={{ background: val.bgColor }}
+            >
+              {/* <Link to={val.pathUrl}> */}
+              <div class="card-img">
                 <img
-                  src={val.image}
+                  src={val.image.src}
                   class="img-fluid"
                   alt=""
                   loading="lazy"
@@ -62,17 +60,16 @@ export default  function  (props)  {
                   height={val?.imageHeight}
                 />
               </div>
-                      <div class="card-body">
-                        <h3 class="card-title">{val.title}</h3>
-                        <p>{val.description}</p>
-                        {/* <button class="btn btn-light">{props.linkName}</button> */}
-                      </div>
-                      {/* </Link> */}
-                    </div>
-                  </div>
-                );
-              })
-            }
+              <div class="card-body">
+                <h3 class="card-title">{val.title}</h3>
+                <p>{val.description}</p>
+                {/* <button class="btn btn-light">{props.linkName}</button> */}
+              </div>
+              {/* </Link> */}
+            </div>
+          </div>
+        );
+      })}
     </Slider>
   );
-};
+}

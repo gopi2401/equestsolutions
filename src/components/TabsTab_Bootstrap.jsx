@@ -1,6 +1,5 @@
 import { Tab, Tabs } from "react-bootstrap";
 import technologyData from "./ComponentAPI/technologyAPI";
-import Astroimage from "./astroimage.astro";
 export default function (){
     return(<>  
     <Tabs>
@@ -9,14 +8,14 @@ export default function (){
                   <Tab eventKey={"tab-" + index} key={index} title={val.title}>
                     <div className="technology__tab-wrapper">
                       <div className="technology__img">
-                        <image src={val.mainImg} alt={val.title} loading="lazy" />
+                        <img src={val.mainImg.src} alt={val.title} loading="lazy" />
                       </div>
                       <ul className="technology__icon-list list-unstyled">
                         {val.images.map((iconVal, iconIndex) => {
                           return (
                             <li key={iconIndex}>
-                              <image
-                                src={iconVal.image}
+                              <img
+                                src={iconVal.image.src}
                                 className="img-fluid"
                                 alt=""
                                 loading="lazy"

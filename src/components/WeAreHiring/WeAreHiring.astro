@@ -1,6 +1,8 @@
 ---
+import SetInnerHTML from "../SetInnerHTML";
+
 // import "./WeAreHiring.scss";
-const { description, link } = Astro.props;
+const {title, description, link } = Astro.props;
 ---
 
 <section class="we_are_hiring_sec">
@@ -10,7 +12,7 @@ const { description, link } = Astro.props;
         <div class="col-md-7 col-lg-6 col-12">
           <div class="heading_wrapper mb-2">
             <h2 class="sec_heading sec_heading-medium">
-              We are <span class="teal_text">hiring now</span>
+             <SetInnerHTML data={title}/>
             </h2>
           </div>
           <div class="desc font18">

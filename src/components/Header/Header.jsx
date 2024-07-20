@@ -29,9 +29,9 @@ const Header = () => {
           <Navbar expanded={expanded} fixed="top">
             <Container>
               <Navbar.Brand>
-                <a href={BASE_URL+"/"}>
+                <a href={BASE_URL}>
                   <img
-                    src={BASE_URL+"/images/logo-large-1.png"}
+                    src={BASE_URL + "/images/logo-large-1.png"}
                     alt="eQuest Solutions"
                     className="img-fluid"
                     width={150}
@@ -63,13 +63,13 @@ const Header = () => {
                         ? setExpanded(expanded ? "" : "expanded")
                         : false
                     }
-                    href="/"
+                    href={BASE_URL}
                   >
                     Home
                   </a>
 
                   {/* onClick={() => width<=991 ? (setExpanded(expanded ? '' : 'expanded')) : false} for mobile*/}
-                  <a className="nav-link" href="/services">
+                  <a className="nav-link" href={BASE_URL + "services"}>
                     Services
                   </a>
 
@@ -725,7 +725,7 @@ const Header = () => {
 
                   <a
                     className="nav-link"
-                    href={BASE_URL+"/about"}
+                    href={BASE_URL + "about"}
                     onClick={() =>
                       width <= 991
                         ? setExpanded(expanded ? "" : "expanded")
@@ -737,7 +737,7 @@ const Header = () => {
 
                   <a
                     className="nav-link"
-                    href={BASE_URL+"/blog"}
+                    href={BASE_URL + "blog"}
                     onClick={() =>
                       width <= 991
                         ? setExpanded(expanded ? "" : "expanded")
@@ -768,18 +768,18 @@ const Header = () => {
                   >
                     Blog
                   </NavLink> */}
-
-                  <button
-                    href={BASE_URL+"/contact"}
-                    className="header_btn_link"
-                    onClick={() =>
-                      width <= 991
-                        ? setExpanded(expanded ? "" : "expanded")
-                        : false
-                    }
-                  >
-                    Contact Us
-                  </button>
+                  <a href={BASE_URL + "contact"}>
+                    <button
+                      className="header_btn_link"
+                      onClick={() =>
+                        width <= 991
+                          ? setExpanded(expanded ? "" : "expanded")
+                          : false
+                      }
+                    >
+                      Contact Us
+                    </button>
+                  </a>
                 </Nav>
               </Navbar.Collapse>
             </Container>

@@ -24,8 +24,11 @@
     "react-bootstrap": "^2.10.4",
     "react-countup": "^6.5.3",
     "react-dom": "^18.3.1",
+    "react-google-recaptcha": "^3.1.0",
     "react-modal-video": "^2.0.2",
     "react-slick": "^0.30.2",
-    "react-visibility-sensor": "^5.1.1"
+    "react-visibility-sensor": "^5.1.1",
+    "sass": "^1.77.8",
+    "scss": "^0.2.4"
   }
 }

@@ -1,6 +1,7 @@
 ---
-// import "./EquestMantra.scss";
+import "../../assets/css/component/About/EquestMantra/EquestMantra.scss";
 const { title } = Astro.props;
+const BASE_URL = import.meta.env.BASE_URL;
 ---
 
 <section class="eq_mantra_sec white_bg">
@@ -10,7 +11,7 @@ const { title } = Astro.props;
         <div class="eq_mantra_content_wrapper sec_pt sec_pb">
           <div class="eq_mantra-left">
             <img
-              src="/images/quote.svg"
+              src={BASE_URL + "/images/quote.svg"}
               alt="quote_img"
               class="img-fluid me-2 me-md-3"
             />

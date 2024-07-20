@@ -1,0 +1,29 @@
+---
+import BlogLanding from "../components/Blog/BlogLanding.astro";
+import WordsFromClients from "../components/WordsFromClients/WordsFromClients.astro";
+import WeAreHiring from "../components/WeAreHiring/WeAreHiring.astro";
+import BlogList from "../components/Blog/BlogList";
+import Layout from "../layouts/Layout.astro";
+// import { Helmet } from "react-helmet";
+//import Categories from "../../component/Blog/BlogCategories/Categories";
+
+---
+<Layout title='Discover the Latest in Technology Expertise | eQuest Solutions Blog' description="Dive into a world of equine expertise and care with EQuest Solutions' blog. Explore a treasure trove of articles, tips, and insights crafted by equestrian professionals.">
+  <div class="page_content page_padding">
+    <BlogLanding />
+    <BlogList client:only="react" />
+    {/* <Categories /> */}
+    <WordsFromClients
+      title={`words from <span className="highlighted-text">clients</span>`
+      }
+      secBg="gradient_bg"
+    />
+    <WeAreHiring
+    title={`We are <span class="teal_text">hiring now</span>`}
+      description={
+        "Join our ever expanding web development and business development teams. Apply today!"
+      }
+      link={"https://forms.gle/vZ2sduLBcvTeZ61L9"}
+    />
+  </div>
+</Layout>

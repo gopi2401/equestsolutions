@@ -1,13 +1,13 @@
 // import magentoPart1 from "../images/blog-img-1.jpg";
 // import shopifyPlatform from "../images/blog-shopify.jpg";
-import seoImage from "../images/blog-seo-img.jpg";
-import developers from "../images/blog-hire-dedicated-developer.jpg";
-import sassPass from "../images/new-sass-pass-img.jpg";
-import wpImg from "../images/why-to-choose-wp.jpg";
-import shopifyHydrogen from "../images/Shopify2.jpg";
-import clutchImg from "../images/blog-clutch-main.jpg";
-import clutchTopImg from "../images/clutch-100-banner.jpg";
-import gutenbergImg from "../images/blog-gutenberd-main.jpg";
+import seoImage from "../../assets/media/blog-seo-img.jpg";
+import developers from "../../assets/media/blog-hire-dedicated-developer.jpg";
+import sassPass from "../../assets/media/new-sass-pass-img.jpg";
+import wpImg from "../../assets/media/why-to-choose-wp.jpg";
+import shopifyHydrogen from "../../assets/media/Shopify2.jpg";
+import clutchImg from "../../assets/media/blog-clutch-main.jpg";
+import clutchTopImg from "../../assets/media/clutch-100-banner.jpg";
+import gutenbergImg from "../../assets/media/blog-gutenberd-main.jpg";
 
 const blogItemData = [
   {

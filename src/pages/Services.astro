@@ -27,15 +27,11 @@ import WeAreHiring from "../components/WeAreHiring/WeAreHiring.astro";
       words from <span class="highlighted-text">clients</span>
     </>
   )} -->
-    <WordsFromClients />
-    <!-- title={
-    (
-      <>
-        We are <span class="teal_text">hiring now</span>
-      </>
-    )
-  } -->
+    <WordsFromClients
+      title={`words from <span className="highlighted-text">clients</span>`}
+    />
     <WeAreHiring
+      title={`We are <span class="teal_text">hiring now</span>`}
       description={"Join our ever expanding web development and business development teams. Apply today!"}
       link={"https://forms.gle/vZ2sduLBcvTeZ61L9"}
     />

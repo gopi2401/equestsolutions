@@ -1,0 +1,20 @@
+@import "../../../variable";
+@import "../../../mixin";
+
+.about_landing_sec {
+  .about_landing-desc {
+    color: $dark_primary_color;
+  }
+  .about_landing-img {
+    margin-bottom: 50px;
+    @include media1199 {
+      margin-bottom: 50px;
+    }
+    @include media991to768 {
+      margin-bottom: 40px;
+    }
+    @include media767 {
+      margin-bottom: 40px;
+    }
+  }
+}

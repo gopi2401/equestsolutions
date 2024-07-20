@@ -22,7 +22,7 @@ export default function (){
             <picture class="bg-overlay__media">
               <source srcSet={hireTeamWebp1} type="image/webp" />
               <source srcSet={hireTeam1} type="image/png" />
-              <Image src={hireTeam1} alt="footer" fluid />
+              <Image src={hireTeam1.src} alt="footer" fluid />
             </picture>
           </div>
         </div>

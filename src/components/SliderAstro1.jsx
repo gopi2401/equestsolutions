@@ -53,8 +53,8 @@ const SliderAstro1 = () => {
                 </p>
               </div>
               <div class="words_from_client-img">
-                <Image
-                  src={val.clientImg}
+                <img
+                  src={val.clientImg.src}
                   alt=""
                   class="img-fluid"
                   loading="lazy"

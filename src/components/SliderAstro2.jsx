@@ -1,7 +1,6 @@
-
 import Slider from "react-slick";
 import awardsAndAchievementsData from "./ComponentAPI/awardsAndAchievementsAPI";
-const SliderAstro2=()=>{
+const SliderAstro2 = () => {
   const awardSettings = {
     dots: false,
     infinite: true,
@@ -56,17 +55,14 @@ const SliderAstro2=()=>{
     ],
   };
 
-    return(  <Slider {...awardSettings}>
+  return (
+    <Slider {...awardSettings}>
       {awardsAndAchievementsData.map((val) => {
         return (
           <div key={val.id} className="d-flex align-items-center">
-            <a
-              href={val.pathUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href={val.pathUrl} target="_blank" rel="noopener noreferrer">
               <img
-                src={val.img}
+                src={typeof(val.img) === 'string' ? val.img : val.img.src}
                 className="slider-img"
                 alt="top cross platform mobile app development companies"
                 style={{ height: val.height, width: val.width }}
@@ -76,7 +72,8 @@ const SliderAstro2=()=>{
           </div>
         );
       })}
-    </Slider>  );
+    </Slider>
+  );
 };
 
 export default SliderAstro2;

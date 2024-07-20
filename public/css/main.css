@@ -106,11 +106,11 @@
   font-family: slick;
   font-style: normal;
   font-weight: 400;
-  src: url(/static/media/slick.a4e97f5a2a64f0ab1323.eot);
-  src: url(/static/media/slick.a4e97f5a2a64f0ab1323.eot?#iefix) format("embedded-opentype"),
-    url(/static/media/slick.295183786cd8a1389865.woff) format("woff"),
-    url(/static/media/slick.c94f7671dcc99dce43e2.ttf) format("truetype"),
-    url(/static/media/slick.2630a3e3eab21c607e21.svg#slick) format("svg");
+  src: url(../images/slick.eot);
+  src: url(../images/slick.eot?#iefix) format("embedded-opentype"),
+    url(../images/slick.woff) format("woff"),
+    url(../images/slick.ttf) format("truetype"),
+    url(../images/slick.svg#slick) format("svg");
 }
 
 .slick-next,
@@ -12600,7 +12600,7 @@ table {
 }
 
 .gradient_bg:after {
-  background-image: url(../media/gradian-border.jpg);
+  background-image: url(../images/gradian-border.jpg);
   background-position: 50%;
   background-repeat: no-repeat;
   content: "";

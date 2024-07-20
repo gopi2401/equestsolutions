@@ -1,8 +1,7 @@
 ---
-// import React from "react";
-// import Slider from "react-slick";
-// import "./EquestLeader.scss";
+import "../../assets/css/component/About/EquestLeader/EquestLeader.scss";
 import leaderItemData from "../ComponentAPI/leaderItemAPI";
+import SliderAstro3 from "../SliderAstro3";
 
 const leaderSettings = {
   dots: false,
@@ -66,22 +65,6 @@ const { title } = Astro.props;
   </div>
 
   <div class="eq_leader_slider_wrapper">
-    <!-- <Slider {...leaderSettings}>
-          {leaderItemData.map((val, index) => {
-            return (
-              <div class="item" key={index}>
-                <div class="eq_leader_content_wrapper">
-                  <div class="eq_leader-img">
-                    <img src={val.leaderImg} alt="" class="img-fluid" />
-                  </div>
-                  <p class="eq_leader-name">{val.leaderName}</p>
-                  <p class="eq_leader-designation">
-                    {val.leaderOccupation}
-                  </p>
-                </div>
-              </div>
-            );
-          })}
-        </Slider> -->
+    <SliderAstro3 client:only="react" />
   </div>
 </section>

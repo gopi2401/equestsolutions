@@ -9,8 +9,6 @@ import WhoWeAre from "../components/About/WhoWeAre.astro";
 import EquestLeader from "../components/About/EquestLeader.astro";
 import WordsFromClients from "../components/WordsFromClients/WordsFromClients.astro";
 import WeAreHiring from "../components/WeAreHiring/WeAreHiring.astro";
-// import Blog from "../../component/Blog";
-// import { Helmet } from "react-helmet";
 ---
 
 <Layout
@@ -18,13 +16,6 @@ import WeAreHiring from "../components/WeAreHiring/WeAreHiring.astro";
   description="We know that business is about people, so we design our products with a human-centric approach that makes it easy for you to get results and keep your team engaged, happy and motivated."
 >
   <div class="page_content page_padding">
-    <!-- <Helmet>
-    <title>About eQuest Solutions | eQuest Solutions</title>
-    <meta
-      name="description"
-      content=""
-    />
-  </Helmet> -->
     <AboutLanding />
     <EquestMantra title="eQuest Mantra" />
     <AwardsAndAchievements title="Awards & Achievements" />
@@ -39,20 +30,12 @@ import WeAreHiring from "../components/WeAreHiring/WeAreHiring.astro";
       /* <Blog 
         title="Blogs" /> */
     }
-    <!-- title={
-    (
-      <>
-        words from <span class="highlighted-text">clients</span>
-      </>
-    )
-  } -->
-    <WordsFromClients />
-    <!-- title={(
-    <>
-      We are <span class="teal_text">hiring now</span>
-    </>
-  )} -->
+    <WordsFromClients
+      title={`words from <span className="highlighted-text">clients</span>`}
+    />
+
     <WeAreHiring
+      title={`We are <span class="teal_text">hiring now</span>`}
       description="Join our ever expanding web development and business development teams. Apply today!"
       link="https://forms.gle/vZ2sduLBcvTeZ61L9"
     />

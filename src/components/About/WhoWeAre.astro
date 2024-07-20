@@ -1,10 +1,6 @@
 ---
-// import React, { useState } from "react";
-// import ModalVideo from "react-modal-video";
-// import "./WhoWeAre.scss";
-import bgVideo from "../../assets/media/poster-img.png";
-
-// const [isOpen, setOpen] = useState(false);
+import "../../assets/css/component/About/WhoWeAre/WhoWeAre.scss";
+import ModalVideo1 from "../ModalVideo1";
 
 const { title, description } = Astro.props;
 ---
@@ -20,28 +16,7 @@ const { title, description } = Astro.props;
           <div class="who_we_are_desc text-center mb-4 mb-lg-5">
             <p>{description}</p>
           </div>
-          <div class="who_we_are_video mx-lg-5">
-            {
-              /*  <ModalVideo
-              channel="youtube"
-              autoplay
-              isOpen={isOpen}
-              videoId="rMWIhiYFsZU"
-              onClose={() => setOpen(false)}
-            />*/
-            }
-            {/*onClick={() => setOpen(true)} */}
-            <div class="who_we_are_video_wrapper">
-              <div
-                class="who_we_are_video-img"
-                style={{ backgroundImage: `url(${bgVideo})` }}
-              >
-              </div>
-              <div class="who_we_are_video-play">
-                <img src="/images/play.png" alt="" class="img-fluid" />
-              </div>
-            </div>
-          </div>
+          <ModalVideo1 client:only="react" />
         </div>
       </div>
     </div>

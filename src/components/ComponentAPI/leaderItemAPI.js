@@ -1,14 +1,14 @@
-import leaderImg1 from "../images/team-toon-1.png";
-import leaderImg2 from "../images/team-toon-2.png";
-import leaderImg3 from "../images/team-toon-3.png";
-import leaderImg4 from "../images/team-toon-4.png";
-import leaderImg5 from "../images/team-toon-5.png";
-import leaderImg6 from "../images/team-toon-6.png";
-import leaderImg7 from "../images/team-toon-7.png";
-import leaderImg8 from "../images/team-toon-8.png";
-import leaderImg9 from "../images/team-toon-9.png";
-import leaderImg10 from "../images/team-toon-10.png";
-import leaderImg12 from "../images/team-toon-12.png";
+import leaderImg1 from "../../assets/media/team-toon-1.png";
+import leaderImg2 from "../../assets/media/team-toon-2.png";
+import leaderImg3 from "../../assets/media/team-toon-3.png";
+import leaderImg4 from "../../assets/media/team-toon-4.png";
+import leaderImg5 from "../../assets/media/team-toon-5.png";
+import leaderImg6 from "../../assets/media/team-toon-6.png";
+import leaderImg7 from "../../assets/media/team-toon-7.png";
+import leaderImg8 from "../../assets/media/team-toon-8.png";
+import leaderImg9 from "../../assets/media/team-toon-9.png";
+import leaderImg10 from "../../assets/media/team-toon-10.png";
+import leaderImg12 from "../../assets/media/team-toon-12.png";
 
 const leaderItemData = [
   {

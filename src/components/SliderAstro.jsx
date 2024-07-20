@@ -1,6 +1,6 @@
 import Slider from "react-slick";
 import clientLogoData from "./ComponentAPI/clientLogosAPI";
-const SliderAstro=(props)=>{
+const SliderAstro = (props) => {
   var sliderSettings = {
     className: "client-logos__slider",
     centerMode: true,
@@ -36,13 +36,13 @@ const SliderAstro=(props)=>{
       },
     ],
   };
-    return(
-      <Slider {...sliderSettings}>
+  return (
+    <Slider {...sliderSettings}>
       {clientLogoData.map((val, index) => {
         return (
           <div class="client-logo__item" key={index}>
             <img
-              src={val.image}
+              src={typeof(val.image) === 'string' ? val.image : val.image.src}
               class="img-fluid"
               alt=""
               loading="lazy"
@@ -51,7 +51,7 @@ const SliderAstro=(props)=>{
         );
       })}
     </Slider>
-    );
-}
+  );
+};
 
 export default SliderAstro;

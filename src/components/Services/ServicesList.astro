@@ -1,5 +1,5 @@
 ---
-// import "./ServicesList.scss";
+import "../../assets/css/component/Services/ServicesList/ServicesList.scss";
 import { Image } from "astro:assets";
 import serviceItemCardData from "../ComponentAPI/servicesItemAPI";
 import SetInnerHTML from "../SetInnerHTML";
@@ -21,7 +21,7 @@ import SetInnerHTML from "../SetInnerHTML";
                 <h4>{val.title}</h4>
                 {/* <p>{val.description}</p> */}
                 {/* <div dangerouslySetInnerHTML={{ __html: val.description }} /> */}
-                <SetInnerHTML description={val.description} />
+                <SetInnerHTML data={val.description} />
                 <ul class="technology__icons">
                   {val.techImages.map((iconVal, iconIndex) => {
                     return (

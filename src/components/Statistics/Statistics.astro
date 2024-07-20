@@ -1,8 +1,6 @@
 ---
-// import { Link } from 'react-router-dom';
 
-import { Image } from "astro:assets";
-// import BgImg from "../../assets/media/bg-statistics.jpg";
+import BgImg from "../../assets/media/bg-statistics.jpg";
 // import "./statistics.scss";
 
 import {
@@ -17,7 +15,7 @@ const { title, description } = Astro.props;
 <section
   class="statistics bg-fixed bg-overlay"
   style={{
-    backgroundImage: "url(" + "/src/assets/media/bg-statistics.jpg" + ")",
+    backgroundImage: "url(" + BgImg.src + ")",
   }}
 >
   <div class="container">

@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-//import { Container, Dropdown, Nav, Navbar, NavItem } from "react-bootstrap"; //? Uncomment this and delete below line when showing services menu
 import { Container, Nav, Navbar } from "react-bootstrap";
-// import { Link, NavLink } from "react-router-dom";
 
 const BASE_URL = import.meta.env.BASE_URL.length > 1 ? import.meta.env.BASE_URL : ".";
 

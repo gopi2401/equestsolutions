@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
 import "../assets/css/component/About/WhoWeAre/WhoWeAre.scss";
 import bgVideo from "../assets/media/poster-img.webp";
-const BASE_URL = import.meta.env.BASE_URL;
+const BASE_URL =
+  import.meta.env.BASE_URL.length > 1 ? import.meta.env.BASE_URL : ".";
 export default function () {
   const [isOpen, setOpen] = useState(false);
   return (

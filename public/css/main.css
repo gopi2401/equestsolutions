@@ -12600,7 +12600,7 @@ table {
 }
 
 .gradient_bg:after {
-  background-image: url(../images/gradian-border.jpg);
+  background-image: url(./images/gradian-border.jpg);
   background-position: 50%;
   background-repeat: no-repeat;
   content: "";

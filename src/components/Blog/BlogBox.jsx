@@ -1,7 +1,8 @@
 import "../../assets/css/component/Blog/BlogBoxComponent/BlogBox.scss";
 import rightArrow from "../../assets/media/right-arrow.svg";
 // import BlogDetail from "../../../pages/Blog/BlogDetails/BlogDetail";
-const BASE_URL = import.meta.env.BASE_URL;
+const BASE_URL =
+  import.meta.env.BASE_URL.length > 1 ? import.meta.env.BASE_URL : ".";
 const BlogBox = (props) => {
   function generateFlagName() {
     switch (props.flag) {
@@ -45,7 +46,7 @@ const BlogBox = (props) => {
       }`}
     >
       <div className="blog_content_img">
-        <a href={BASE_URL+`blog/${props.pathUrl}`}>
+        <a href={BASE_URL + `blog/${props.pathUrl}`}>
           <div
             className="blog_content-bg-img"
             // style={{ backgroundImage: "url(" + props.blogImg + ")" }}
